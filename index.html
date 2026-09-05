@@ -155,13 +155,40 @@
         <h2>Let's improve your production line.</h2>
         <p>Tell us about your equipment, production challenge or upcoming NPI project.</p>
       </div>
-      <form onsubmit="event.preventDefault(); alert('Thank you. Please connect this form to your business email before launch.');">
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Business email" required>
-        <input type="text" placeholder="Company">
-        <textarea rows="5" placeholder="How can we help?"></textarea>
-        <button class="button primary" type="submit">Send enquiry</button>
-      </form>
+<form action="https://formspree.io/f/mzebazlk" method="POST">
+
+    <input
+      type="text"
+      name="name"
+      placeholder="Name"
+      required
+    >
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Business email"
+      required
+    >
+
+    <input
+      type="text"
+      name="company"
+      placeholder="Company"
+    >
+
+    <textarea
+      name="message"
+      rows="5"
+      placeholder="How can we help?"
+      required
+    ></textarea>
+
+    <button class="button primary" type="submit">
+      Send enquiry
+    </button>
+
+  </form>
     </div>
   </section>
 </main>
